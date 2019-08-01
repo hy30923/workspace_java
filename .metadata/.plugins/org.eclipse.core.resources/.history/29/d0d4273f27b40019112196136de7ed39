@@ -1,0 +1,23 @@
+/*
+ * Modify: 2019/08/01
+ * Author: Sean Hsu
+ * Version: 1.0.0
+ * Describe: orz
+ * 
+ */
+
+import java.io.*;
+
+public class WhatIs{
+
+	public static void main(String argv[]) throws IOException{
+		
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		String age = null;		
+		
+		System.out.print("What is your age? ");
+		age = in.readLine();
+		
+		System.out.println(Integer.parseInt(age));
+	}
+}

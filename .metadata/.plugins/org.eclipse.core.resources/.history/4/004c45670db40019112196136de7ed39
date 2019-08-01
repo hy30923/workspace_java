@@ -1,0 +1,9 @@
+
+public class Hello{
+
+	public static void main(String argv[]){ // need to modify
+		
+		if(argv[0] == 0)	System.out.println("Hello World!!");
+		else					System.out.println(argv[0].toString());
+	}
+}

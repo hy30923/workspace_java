@@ -1,0 +1,7 @@
+public class Orz{
+	
+	public static void main(String argv[]){
+		
+		System.out.print("Today is orz!");
+	}
+}

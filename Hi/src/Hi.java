@@ -1,0 +1,15 @@
+/*
+ * Date: 2019/08/01
+ * Author: Sean Hsu
+ * Version: 1.0.0
+ * Describe: Nice to meet you
+ * 
+ */
+
+public class Hi{
+
+	public static void main(String argv[]){
+		
+		System.out.println("Nice\nTo\nMeet\nYou");
+	}
+}

@@ -1,0 +1,27 @@
+/*
+ * Modify: 2019/08/01
+ * Author: Sean Hsu
+ * Version: 1.0.0
+ * Describe: AddTwoInt
+ * 
+ */
+
+// import all objects under the java.io 
+import java.io.*;
+
+public class AddTwoInt{
+
+	public static void main(String argv[]) throws IOException{	// throws exceptions
+		
+		BufferedReader in_buff = new BufferedReader(new InputStreamReader(System.in));
+		int num1 = 0, num2 = 0;
+		
+		System.out.print("Input the first num: ");
+		num1 = Integer.parseInt(in_buff.readLine());
+		
+		System.out.print("Input the second num: ");
+		num2 = Integer.parseInt(in_buff.readLine());
+		
+		System.out.print(num1 + num2);
+	}
+}
