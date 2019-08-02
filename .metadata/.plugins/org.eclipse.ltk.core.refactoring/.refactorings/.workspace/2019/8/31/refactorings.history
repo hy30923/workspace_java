@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;AddTwoString&apos;" deleteContents="false" description="Delete resource &apos;AddTwoString&apos;" element1="/AddTwoString" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1564646095486"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;AddTwoString&apos;" deleteContents="false" description="Delete resource &apos;AddTwoString&apos;" element1="/AddTwoString" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1564646095486"/>&#x0A;<refactoring comment="Delete resource &apos;TwoDimArray&apos;" deleteContents="true" description="Delete resource &apos;TwoDimArray&apos;" element1="/TwoDimArray" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1564723794977"/>
 </session>

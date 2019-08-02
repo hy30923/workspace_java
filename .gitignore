@@ -1,3 +1,4 @@
 #.gitignore
 
 *.7z
+/.metadata/
