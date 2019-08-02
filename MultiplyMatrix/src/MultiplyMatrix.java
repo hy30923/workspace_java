@@ -72,7 +72,7 @@ public class MultiplyMatrix{
 				
 				for(int k = 0 ; k < 3 ; k++)
 					
-					MatrixC[i][j] = MatrixC[i][j] + MatrixA[i][k] * MatrixB[k][j];
+					MatrixC[i][j] += MatrixA[i][k] * MatrixB[k][j];
 				
 				System.out.printf("%d ", MatrixC[i][j]);
 			}
