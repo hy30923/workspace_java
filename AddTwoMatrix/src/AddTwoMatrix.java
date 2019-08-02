@@ -41,7 +41,7 @@ public class AddTwoMatrix{
 			
 			for(int j = 0 ; j < 3 ; j++)
 				
-				MatrixA[i] = Integer.parseInt(console.readLine().split());
+				MatrixA[i][j] = Integer.parseInt(console.readLine());
 		
 		// get matrix B
 		System.out.println("Input matrix B:");
