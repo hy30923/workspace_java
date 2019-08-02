@@ -6,13 +6,13 @@
  * 
  */
 
-import java.io.Console;
+import java.io.*;
 
 public class Remainder{
 
-	public static void main(String argv[]){
+	public static void main(String argv[]) throws IOException{
 	
-		Console console = System.console();
+		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 		
 		int num = 0;
 		num = Integer.parseInt(console.readLine());

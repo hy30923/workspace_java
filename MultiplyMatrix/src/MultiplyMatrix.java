@@ -8,39 +8,17 @@
  * 
  */
 
+import java.io.BufferedReader;
 import java.io.Console;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MultiplyMatrix{
 
-	public static void main(String argv[]){
-		/*
-		int MatrixA[][] = {{1, 2, 3},
-					       {3, 4, 5}};
-		
-		int MatrixB[][] = {{1, 2},
-						   {3, 4},
-						   {5, 6}};
-		
-		int MatrixC[][] = {{0, 0},
-						   {0, 0}};
-		
-		// it has other better method to implement, need to be modified
-		for(int i = 0 ; i < 2 ; i++){
-			
-			for(int j = 0 ; j < 2 ; j++){
-				
-				for(int k = 0 ; k < 3 ; k++)
-					
-					MatrixC[i][j] = MatrixC[i][j] + MatrixA[i][k] * MatrixB[k][j];
-				
-				System.out.printf("%d ", MatrixC[i][j]);
-			}
-			
-			System.out.print('\n');
-		}
-		*/
-		
-		Console console = System.console();
+	public static void main(String argv[]) throws IOException{
+
+		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+		String readNumString[] = null;
 		
 		int MatrixA[][] = new int[2][3];
 		int MatrixB[][] = new int[3][2];
@@ -50,22 +28,30 @@ public class MultiplyMatrix{
 		// get matrix A
 		System.out.println("Input matrix A:");
 		
-		for(int i = 0 ; i < 2 ; i++)
+		for(int i = 0 ; i < 2 ; i++){
+			
+			readNumString = console.readLine().split("\\s+");
 			
 			for(int j = 0 ; j < 3 ; j++)
 				
-				MatrixA[i][j] = Integer.parseInt(console.readLine());
+				MatrixA[i][j] = Integer.parseInt(readNumString[j]);
+		}
 		
 		// get matrix B
 		System.out.println("Input matrix B:");
 		
-		for(int i = 0 ; i < 3 ; i++)
+		for(int i = 0 ; i < 3 ; i++){
+			
+			readNumString = console.readLine().split("\\s+");
 			
 			for(int j = 0 ; j < 2 ; j++)
 				
-				MatrixB[i][j] = Integer.parseInt(console.readLine());
+				MatrixB[i][j] = Integer.parseInt(readNumString[j]);
+		}
 		
 		// multiple two matrix
+		System.out.println("Matrix A dot Matrix B:");
+		
 		for(int i = 0 ; i < 2 ; i++){
 			
 			for(int j = 0 ; j < 2 ; j++){

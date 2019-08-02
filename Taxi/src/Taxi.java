@@ -6,13 +6,13 @@
  * 
  */
 
-import java.io.Console;
+import java.io.*;
 
 public class Taxi{
 	
-	public static void main(String argv[]){
+	public static void main(String argv[]) throws IOException{
 	
-		Console console = System.console();
+		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 		
 		int meters = 0;
 		meters = Integer.parseInt(console.readLine());

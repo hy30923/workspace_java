@@ -1,7 +1,7 @@
 /*
  * Date: 2019/08/02
  * Author: Sean Hsu
- * Version: 1.0.0
+ * Version: 1.2.0
  * Describe: WhliePrime
  * 
  */
@@ -13,27 +13,30 @@ public class WhileIsPrime{
 	public static void main(String argv[]) throws IOException{
 		
 		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-		while(true) {
-		System.out.print("Input n: ");
-		int n = Integer.parseInt(console.readLine());
-		int i = 2;
+
+		System.out.print("Input number to judge whether is prime: ");
+		long num = Long.parseLong(console.readLine());
+		long i = 3;
 		boolean isPrime = true;
 		
-		if(n < 0){
+		if(num < 0){
 			
-			System.out.print("n must greater than 0");
+			System.err.print("n must be greater than 0");
 			return;
 		}
 		
-		while(i < (n / 2)){
+		// We can pass the even numbers
+		if((num % 2 == 0) && (num > 2))  isPrime = true;
+		
+		// We just judge it less than n^(1/2) times.
+		while(i < (int) Math.sqrt(num)){
 			
-			if(n % i == 0)	isPrime = false;
-			i++;
+			if(num % i == 0)  isPrime = false;
+			i += 2;
 		}
 		
-		if(n == 2)	isPrime = true;
+		if(num == 2)  isPrime = true;
 		
 		System.out.println(isPrime);
-		}
 	}
 }
