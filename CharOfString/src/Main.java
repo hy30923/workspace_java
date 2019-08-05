@@ -17,10 +17,6 @@ public class Main{
 		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 			
 		String input = console.readLine();
-		if(input.length() != 5){
-			
-			return;
-		}
 		
 		CharOfString strObj = new CharOfString(input);
 		strObj.printLiterally();
