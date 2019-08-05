@@ -24,12 +24,12 @@ public class Rabbits{
 		
 			case 0:
 				
-				System.out.printf("\nThere are %d pair(s) of rabbits.", fib_a);
+				System.out.printf("There are %d pair(s) of rabbits.", fib_a);
 				break;
 				
 			case 1:
 				
-				System.out.printf("\nThere are %d pair(s) of rabbits.", fib_b);
+				System.out.printf("There are %d pair(s) of rabbits.", fib_b);
 				break;
 				
 			default:
