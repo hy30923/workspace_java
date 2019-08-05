@@ -16,8 +16,8 @@ public class Main{
 		
 		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 		
-		ReverseInt num = new ReverseInt(console.readLine());
-		
-		num.printReverse();
+		ReverseInt num = new ReverseInt(Integer.parseInt(console.readLine()));
+
+		num.print(num.reverse());
 	}
 }
