@@ -2,7 +2,7 @@
  * Date: 2019/08/03
  * Author: Sean Hsu
  * Version: 1.0.0
- * Describe: This rabbit problem can be reduced to fibonacci sequence problem.
+ * Describe: 
  * 			 
  */
 
@@ -10,40 +10,47 @@ import java.io.*;
 
 public class Rabbits{
 	
-	public static void main(String argv[]) throws IOException{
+	private int littleRabbit, mediumRabbit, restRabbit, largeRabbit;
+	
+	public Rabbits(){
 		
-		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+		littleRabbit = 1;
+		mediumRabbit = 0;
+		restRabbit = 0;
+		largeRabbit = 0;
+	}
+	
+	public int getLittleRabbit(){
 		
-		System.out.print("Input n: ");
-		int n = Integer.parseInt(console.readLine());
+		return littleRabbit;
+	}
+	
+	public int getMediumRabbit(){
 		
-		// initial fibonacci sequence (for rabbit problem)
-		long fib_a = 1, fib_b = 1, fib_c = 0;
+		return mediumRabbit;
+	}
+	
+	public int getRestRabbit(){
 		
-		switch(n){
+		return restRabbit;
+	}
+	
+	public int getLargeRabbit(){
 		
-			case 0:
-				
-				System.out.printf("There are %d pair(s) of rabbits.", fib_a);
-				break;
-				
-			case 1:
-				
-				System.out.printf("There are %d pair(s) of rabbits.", fib_b);
-				break;
-				
-			default:
-				
-				// fibonacci sequence
-				for(int i = 2 ; i < n ; i++){
-					
-					fib_c = fib_a + fib_b;
-					fib_a = fib_b;
-					fib_b = fib_c;
-				}
-				
-				System.out.printf("There are %d pair(s) of rabbits.", fib_c);
-				break;
-		}
+		return largeRabbit;
+	}
+	
+	public void timePass(){
+		
+		largeRabbit += restRabbit;
+		restRabbit = mediumRabbit;
+		mediumRabbit = littleRabbit;
+		littleRabbit = largeRabbit;
+	}
+	
+	public void printTotal(String format){
+		
+		System.out.print(format);
+		System.out.println(littleRabbit + mediumRabbit + restRabbit + largeRabbit);
 	}
 }

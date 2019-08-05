@@ -24,38 +24,46 @@ public class Operators{
 		int mul = operation.indexOf('*');
 		int div = operation.indexOf('/');
 		
-		if(add != 0){
+		if(add > 0){
 			
-			String s = operation.substring(0, add);
-			preNum = Integer.parseInt(s);
-			s = operation.substring(add+1, operation.length());
-			postNum = Integer.parseInt(s);
+			String s = operation.substring(0, add);	
+			preNum = Integer.parseInt(s.trim());
+			s = operation.substring(add + 1, operation.length());
+			postNum = Integer.parseInt(s.trim());
 			op = "+";
 		}
-		else if(minus != 0){
+		
+		else if(minus > 0){
 			
 			String s = operation.substring(0, minus);
-			preNum = Integer.parseInt(s);
-			s = operation.substring(minus+1, operation.length());
-			postNum = Integer.parseInt(s);
+			preNum = Integer.parseInt(s.trim());
+			s = operation.substring(minus + 1, operation.length());
+			postNum = Integer.parseInt(s.trim());
 			op = "-";
 			
 		}
-		else if(mul != 0){
+		
+		else if(mul > 0){
 			
 			String s = operation.substring(0, mul);
-			preNum = Integer.parseInt(s);
-			s = operation.substring(mul+1, operation.length());
-			postNum = Integer.parseInt(s);
+			preNum = Integer.parseInt(s.trim());
+			s = operation.substring(mul + 1, operation.length());
+			postNum = Integer.parseInt(s.trim());
 			op = "*";
 		}
-		else if(div != 0){
+		
+		else if(div > 0){
 			
 			String s = operation.substring(0, div);
-			preNum = Integer.parseInt(s);
-			s = operation.substring(div+1, operation.length());
-			postNum = Integer.parseInt(s);
+			preNum = Integer.parseInt(s.trim());
+			s = operation.substring(div + 1, operation.length());
+			postNum = Integer.parseInt(s.trim());
 			op = "/";
+		}
+		
+		else{
+			
+			System.err.println("Input error!!");
 		}
 	}
 	
