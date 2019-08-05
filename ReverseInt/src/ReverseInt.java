@@ -9,15 +9,18 @@
 public class ReverseInt{
 	
 	private int num;
+	private int digit;
 	
 	public ReverseInt(){
 		
 		num = 0;
+		digit = 0;
 	}
 	
-	public ReverseInt(int num){
+	public ReverseInt(String num){
 		
-		this.num = num;
+		digit = num.length();
+		this.num = Integer.parseInt(num);
 	}
 	
 	public int getNum(){
@@ -32,12 +35,12 @@ public class ReverseInt{
 	
 	public void printReverse(){
 	
-		int digit = 10;
+		int divider = 10;
 		
-		for(int i = 0 ; i < 4 ; i++){
+		for(int i = 0 ; i < digit ; i++){
 			
-			System.out.print(num % digit / (digit / 10));
-			digit *= 10; 
+			System.out.print(num % divider / (divider / 10));
+			divider *= 10; 
 		}
 	}
 	
