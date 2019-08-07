@@ -1,5 +1,3 @@
-import java.awt.Graphics2D;
-
 /*
  * Date: 2019/08/06
  * Author: Sean Hsu
@@ -46,7 +44,6 @@ public class Shape{
 	
 	public void draw(){
 		
-		Graphics2D g;
-		g.draw(100, 100, 40, 40);
+		System.out.printf("x: %f, y: %f\n", x, y);
 	}
 }
