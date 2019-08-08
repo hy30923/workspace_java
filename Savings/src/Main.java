@@ -15,12 +15,9 @@ public class Main{
 		System.out.println("Money: " + Tom.getBalance());
 		
 		Tom.deposit(50000);
-		System.out.println("After deposit...");
-		System.out.println("Money: " + Tom.getBalance());
 		
 		Tom.withdraw(1000000);
-		System.out.println("After withdraw...");
-		System.out.println("Money: " + Tom.getBalance());
+		
 	}
 }
 
@@ -39,6 +36,8 @@ class Savings {
 	void deposit(int money) {
 		
 		balance += money;
+		System.out.println("After deposit...");
+		System.out.println("Money: " + this.getBalance());
 	}
 	
 	void withdraw(int money) {
@@ -50,6 +49,8 @@ class Savings {
 		}
 		
 		balance -= money;
+		System.out.println("After withdraw...");
+		System.out.println("Money: " + this.getBalance());
 	}
 	
 	int getBalance() {
