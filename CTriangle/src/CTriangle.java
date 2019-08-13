@@ -1,7 +1,3 @@
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
-
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 /*
  * Date: 2019/08/06
  * Author: Sean Hsu

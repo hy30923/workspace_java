@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=Mix/src&lt;{Parent.java[Parent" modifiers="1" timestamp="1565159868445"/>
+<typeInfo handle="=Car/src&lt;{Car.java[Car" modifiers="1025" timestamp="1565249975870"/>
+<typeInfo handle="=Account/src&lt;{Transaction.java[Transaction" modifiers="1025" timestamp="1565251066843"/>
+<typeInfo handle="=Println/C:\/Program Files\/Java\/jre1.8.0_201\/lib\/rt.jar&lt;java.lang(Object.class[Object" modifiers="33" timestamp="1547811549820"/>
+<typeInfo handle="=MyThread/C:\/Program Files\/Java\/jre1.8.0_201\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1547811549820"/>
+<typeInfo handle="=MyThread/C:\/Program Files\/Java\/jre1.8.0_201\/lib\/rt.jar&lt;java.lang(Runnable.class[Runnable" modifiers="1537" timestamp="1547811549820"/>
 </typeInfoHistroy>
